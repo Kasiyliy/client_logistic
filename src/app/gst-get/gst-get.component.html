@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>EDIT</th>
+      <th>DELETE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let storage of storages">
+      <td>{{ storage.id }}</td>
+      <td>{{ storage.name }}</td>
+      <td>EDIT boladi</td>
+      <td><a (click)="deleteStorage(storage.id)" class="btn btn-danger">DELETE</a></td>
+    </tr>
+  </tbody>
+</table>
